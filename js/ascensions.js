@@ -88,7 +88,7 @@ const ASCENSIONS = {
             4: `Kaon & Pion gains are multiplied by 5 every Ascension.`,
             7: `Remove dilated mass's overflow.`,
             13: `Remove atomic power's overflow.`,
-            15: `Remove Exotic Rank & Tier, Super & Hyper Hex.`,
+            15: `Remove Exotic Grind & Trind, Super & Hyper Hexind.`,
             22: `Challenge 5's reward is changed again.`,
             23: `The bonus of any radiation boost now multiplies its strengthness at an reduced rate.`,
             33: `19th Big Rip upgrade is twice as effective again.`,

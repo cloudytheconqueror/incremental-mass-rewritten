@@ -306,7 +306,7 @@ const INF = {
                 cost: E(2e3),
             },{
                 title: "Final Star Automation",
-                desc: "Automate final star shard, and it doesn’t reset anything. Also, start with beyond-ranks automation.",
+                desc: "Automate final star shard, and it doesn’t reset anything. Also, start with beyond-grinds automation.",
                 cost: E(2e3),
             },{
                 title: "Lethal Universe",

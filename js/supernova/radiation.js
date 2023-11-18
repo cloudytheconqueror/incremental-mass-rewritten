@@ -202,12 +202,12 @@ const RADIATION = {
             },
             desc(x) { return `Tickspeed power's softcap starts ${format(x)}x later` },
         },{
-            title: `Meta-Rank Boost`,
+            title: `Meta-Grind Boost`,
             eff(b) {
                 let x = E(1.025).pow(b.softcap(13000,0.2,0).softcap(400,0.5,0))
                 return x
             },
-            desc(x) { return `Meta-Rank starts ${format(x)}x later` },
+            desc(x) { return `Meta-Grind starts ${format(x)}x later` },
         },{
             title: `X-ray Boost`,
             eff(b) {

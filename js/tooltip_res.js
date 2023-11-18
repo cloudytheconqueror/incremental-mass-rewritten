@@ -209,7 +209,7 @@ const TOOLTIP_RES = {
             <i>
             Start the 16th Challenge. Earn <b>Corrupted Shards</b> based on your mass of black hole, when exiting the challenge with more than <b>${formatMass('e100')}</b> of black hole.<br><br>
             • You cannot gain rage powers, and all matters' formulas are disabled, and they generate each other. Red matter generates dark matter.<br>
-            • Pre-C16 features, such as rank, prestige tiers, main upgrades, elements, tree upgrades, etc. may be corrupted (disabled).<br>
+            • Pre-C16 features, such as grind, prestige tiers, main upgrades, elements, tree upgrades, etc. may be corrupted (disabled).<br>
             • You are trapped in Mass Dilation & Dark Run with 100 all glyphs (10 slovak glyphs).<br>
             • Primordium particles are disabled.<br>
             • Pre-Quantum global speed is always set to /100.<br>

@@ -220,11 +220,11 @@ const SCALING_RES = {
 }
 
 const NAME_FROM_RES = {
-	rank: "Rank",
-	tier: "Tier",
-	tetr: "Tetr",
-	pent: "Pent",
-	hex: "Hex",
+	rank: "Grind",
+	tier: "Trind",
+	tetr: "Tetrind",
+	pent: "Pentind",
+	hex: "Hexind",
 	massUpg: "Mass Upgrades 1-3",
 	tickspeed: "Tickspeed",
 	bh_condenser: "Black Hole Condenser",

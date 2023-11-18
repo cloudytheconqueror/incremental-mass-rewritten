@@ -26,7 +26,7 @@ const DARK_RUN = {
         x => `Reduce the exponent of atom, atomic power and quark multiplier by <b>^${format(x)}</b> in dark run.<br class='line'>Earn more glyphs based on quarks.`,
         x => `Reduce the exponent of relativistic particle’s multiplier, the exponent of dilated mass formula by <b>^${format(x)}</b> in dark run.<br class='line'>Earn more glyphs based on dilated mass.`,
         x => `Reduce the exponent of supernova resources’ multiplier by <b>^${format(x[0])}</b>, increase the supernova’s requirement by <b>x${format(x[1])}</b> in dark run.<br class='line'>Earn more glyphs based on collapsed stars.`,
-        x => `Reduce the prestige base’s exponent by <b>/${format(x)}</b>, increase every rank’s requirement by <b>x${format(x)}</b> in dark run.<br class='line'>Earn more glyphs based on prestige base.`,
+        x => `Reduce the prestige base’s exponent by <b>/${format(x)}</b>, increase every grind’s requirement by <b>x${format(x)}</b> in dark run.<br class='line'>Earn more glyphs based on prestige base.`,
     ],
 
     mass_glyph_gain: [
@@ -68,7 +68,7 @@ const DARK_RUN = {
             effDesc: x=>"^"+format(x,2),
         },{
             max: 5,
-            desc: `Exotic rank starts x1.25 later every level.`,
+            desc: `Exotic grind starts x1.25 later every level.`,
             cost(i) {
                 return {1: 6*i+10, 2: 6*i+5}
             },
@@ -76,7 +76,7 @@ const DARK_RUN = {
             effDesc: x=>"x"+format(x,2)+" later",
         },{
             max: 1,
-            desc: `Rank tiers' nerf power from 8th QC modifier is weaker while dark running.`,
+            desc: `Grind tiers' nerf power from 8th QC modifier is weaker while dark running.`,
             cost() { return {2: 15, 5: 5} },
         },{
             max: 10,

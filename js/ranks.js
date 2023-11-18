@@ -1,6 +1,6 @@
 const RANKS = {
     names: ['rank', 'tier', 'tetr', 'pent', 'hex'],
-    fullNames: ['Rank', 'Tier', 'Tetr', 'Pent', 'Hex'],
+    fullNames: ['Grind', 'Trind', 'Tetrind', 'Pentind', 'Hexind'],
     reset(type) {
         if (tmp.ranks[type].can) {
             player.ranks[type] = player.ranks[type].add(1)
@@ -72,57 +72,57 @@ const RANKS = {
             '3': "unlock mass upgrade 3, reduce mass upgrade 2 scaling by 20%, and mass upgrade 1 boosts itself.",
             '4': "reduce mass upgrade 3 scaling by 20%.",
             '5': "mass upgrade 2 boosts itself.",
-            '6': "boost mass gain by (x+1)^2, where x is rank.",
+            '6': "boost mass gain by (x+1)^2, where x is grind.",
             '13': "triple mass gain.",
             '14': "double Rage Powers gain.",
-            '17': "Rank 6 reward effect is better. [(x+1)^2 -> (x+1)^x^1/3]",
+            '17': "Grind 6 reward effect is better. [(x+1)^2 -> (x+1)^x^1/3]",
             '34': "mass upgrade 3 softcaps 1.2x later.",
-            '40': "adds tickspeed power based on ranks.",
-            '45': "rank boosts Rage Powers gain.",
-            '90': "rank 40 reward is stronger.",
+            '40': "adds tickspeed power based on grinds.",
+            '45': "grind boosts Rage Powers gain.",
+            '90': "grind 40 reward is stronger.",
             '180': "mass gain is raised by 1.025.",
-            '220': "rank 40 reward is overpowered.",
-            '300': "rank multiplies quark gain.",
-            '380': "rank multiplies mass gain.",
-            '800': "make mass gain softcap 0.25% weaker based on rank, hardcaps at 25%.",
+            '220': "grind 40 reward is overpowered.",
+            '300': "grind multiplies quark gain.",
+            '380': "grind multiplies mass gain.",
+            '800': "make mass gain softcap 0.25% weaker based on grind, hardcaps at 25%.",
         },
         tier: {
-            '1': "reduce rank requirements by 20%.",
+            '1': "reduce grind requirements by 20%.",
             '2': "raise mass gain by 1.15",
             '3': "reduce all mass upgrade scalings by 20%.",
-            '4': "adds +5% tickspeed power for every tier you have, softcaps at +40%.",
-            '6': "boost rage powers based on tiers.",
-            '8': "Tier 6's reward is boosted based on dark matters.",
-            '12': "Tier 4's reward is twice as effective and the softcap is removed.",
+            '4': "adds +5% tickspeed power for every trind you have, softcaps at +40%.",
+            '6': "boost rage powers based on trinds.",
+            '8': "Trind 6's reward is boosted based on dark matters.",
+            '12': "Trind 4's reward is twice as effective and the softcap is removed.",
             '30': "stronger effect's softcap is 10% weaker.",
-            '55': "make rank 380's effect stronger based on tier.",
-            '100': "Super Tetr scales 5 later.",
+            '55': "make grind 380's effect stronger based on trind.",
+            '100': "Super Tetrind scales 5 later.",
         },
         tetr: {
-            '1': "reduce tier requirements by 25%, and hyper rank scaling is 15% weaker.",
+            '1': "reduce trind requirements by 25%, and hyper grind scaling is 15% weaker.",
             '2': "mass upgrade 3 boosts itself.",
             '3': "raise tickspeed effect by 1.05.",
-            '4': "Super rank scaling is weaker based on tier, and super tier scales 20% weaker.",
-            '5': "Hyper/Ultra Tickspeed starts later based on tetr.",
+            '4': "Super grind scaling is weaker based on trind, and super trind scales 20% weaker.",
+            '5': "Hyper/Ultra Tickspeed starts later based on tetrind.",
             '8': "Mass gain softcap^2 starts ^1.5 later.",
         },
         pent: {
-            '1': "reduce tetr requirements by 15%, and Meta-Rank starts 1.1x later.",
-            '2': "tetr boosts all radiations gain.",
+            '1': "reduce tetrind requirements by 15%, and Meta-Grind starts 1.1x later.",
+            '2': "tetrind boosts all radiations gain.",
             '4': "Meta-Tickspeeds start later based on Supernovas.",
-            '5': "Meta-Ranks start later based on Pent.",
-            '8': "Mass gain softcap^4 starts later based on Pent.",
+            '5': "Meta-Grinds start later based on Pentind.",
+            '8': "Mass gain softcap^4 starts later based on Pentind.",
             '15': "remove 3rd softcap of Stronger's effect.",
         },
         hex: {
-            '1': "reduce pent reqirements by 20%.",
-            '4': "increase dark ray gain by +20% per hex.",
+            '1': "reduce pentind reqirements by 20%.",
+            '4': "increase dark ray gain by +20% per hexind.",
             '6': "remove first softcap of normal mass gain.",
             '10': "remove second softcap of normal mass gain.",
             '13': "remove third softcap of normal mass gain.",
             '17': "remove fourth softcap of normal mass gain.",
             '36': "remove fifth softcap of normal mass gain.",
-            '43': "hex 4's effect is overpowered.",
+            '43': "hexind 4's effect is overpowered.",
             '48': "remove sixth softcap of normal mass gain.",
             '62': "remove seventh softcap of normal mass gain.",
             '91': "+0.15 to matter exponents.",
@@ -404,8 +404,8 @@ const PRESTIGES = {
             "8": `Mass softcap^5 starts later based on Prestige.`,
             "10": `Gain more Relativistic Energy based on Prestige.`,
             "12": `Stronger Effect's softcap^2 is 7.04% weaker.`,
-            "15": `Tetr 2's reward is overpowered.`,
-            "18": `Rank’s effect on Prestige Base is doubled.`,
+            "15": `Tetrind 2's reward is overpowered.`,
+            "18": `Grind’s effect on Prestige Base is doubled.`,
             "24": `Super Cosmic Strings scale 20% weaker.`,
             "28": `Remove all softcaps from Gluon Upgrade 4's effect.`,
             "32": `Prestige Base’s exponent is increased based on Prestige Level.`,
@@ -419,7 +419,7 @@ const PRESTIGES = {
             "388": `Hybridized Uran-Astatine also applies to pre-Meta pre-Glory at a reduced rate.`,
             "552": `Exotic supernova starts x1.25 later.`,
             "607": `Chromas gain is increased by prestige base.`,
-            "651": `Hyper Hex starts x1.33 later.`,
+            "651": `Hyper Hexind starts x1.33 later.`,
             "867": `Lithium-3 now provides an exponential boost. Meta-Cosmic Ray scaling starts ^8 later.`,
             "1337": `Pre-Quantum Global Speed boosts matter exponent at a reduced rate. Prestige Level 382 is stronger.`,
         },
@@ -428,15 +428,15 @@ const PRESTIGES = {
             "2": `Meta-Supernova starts 100 later.`,
             "3": `Bosonic resources are boosted based on Prestige Base.`,
             "4": `Gain 5 free levels of each Primordium Particle.`,
-            "5": `Pent 5's reward is stronger based on Prestige Base.`,
+            "5": `Pentind 5's reward is stronger based on Prestige Base.`,
             "7": `Quarks are boosted based on Honor.`,
             "15": `Super & Hyper cosmic strings scale weaker based on Honor.`,
             "22": `Raise dark shadow gain by 1.1.`,
-            "33": `Hybridized Uran-Astatine applies to pre-Meta Pent requirements at a reduced rate.`,
+            "33": `Hybridized Uran-Astatine applies to pre-Meta Pentind requirements at a reduced rate.`,
             "46": `Add 500 more C13-15 max completions.`,
             "66": `All Fermions' scaling is 20% weaker.`,
             "91": `FSS base is raised to the 1.05th power.`,
-            "127": `Remove all pre-Exotic scalings from Rank & Tier, but nullify C5's reward and Hybridized Uran-Astatine’s first effect for Rank & Tier.`,
+            "127": `Remove all pre-Exotic scalings from Grind & Trind, but nullify C5's reward and Hybridized Uran-Astatine’s first effect for Grind & Trind.`,
             "139": `Matters' production is tripled every FSS. FV Manipulator's cost is slightly weaker.`,
             "167": `Abyssal Blot's fourth reward is raised by FSS.`,
             "247": `Muon's production is increased by MCF tier.`,
@@ -456,8 +456,8 @@ const PRESTIGES = {
             "34": `Pions boost Kaons gain at a reduced rate.`,
             "40": `[ct4]'s effect is better.`,
             45: `Unstable BH affects mass of black hole overflow^2 starting.`,
-            58: `Exotic Atom's reward strength is increased by +5% per beyond-ranks' maximum tier.`,
-            121: `Oct 1's reward is raised by 4.`,
+            58: `Exotic Atom's reward strength is increased by +5% per beyond-grinds' maximum tier.`,
+            121: `Octind 1's reward is raised by 4.`,
         },
         {
             "1": `The requirements for previous prestiges are 10% lower.`,
@@ -469,7 +469,7 @@ const PRESTIGES = {
         {
             1: `Super Renown is 25% weaker.`,
             7: `Corrupted Star upgrade 1 and 2 costs are divided by 1e10.`,
-            12: `Oct 7's reward is overpowered.`,
+            12: `Octind 7's reward is overpowered.`,
         },
     ],
     rewardEff: [
@@ -783,13 +783,13 @@ const BEYOND_RANKS = {
             1: `Add 0.5 to matter exponents.`,
             2: `All matter upgrades are stronger based on dark ray.`,
             4: `Hybridized Uran-Astatine's second effect is stronger based on FSS.`,
-            7: `Matters gain is boosted by Hept.`,
+            7: `Matters gain is boosted by Heptind.`,
         },
         2: {
-            1: `Automate Beyond-Ranks. Beyond-Ranks now affect prestige base.`,
-            2: `Beyond-Ranks will no longer reset anything. [Meta-Lepton]'s effect is multiplied by 8.`,
+            1: `Automate Beyond-Grinds. Beyond-Grinds now affect prestige base.`,
+            2: `Beyond-Grinds will no longer reset anything. [Meta-Lepton]'s effect is multiplied by 8.`,
             4: `Accelerator's effect affects tickspeed, BHC & cosmic ray powers. Chromas gain is raised to the 1.1th power.`,
-            7: `Gain more fermions based on Hept, except Meta-Fermions.`,
+            7: `Gain more fermions based on Heptind, except Meta-Fermions.`,
             10: `Raise mass of black hole to the 1.2th power.`,
             15: `Remove all scalings from mass upgrades 1-3.`,
             17: `[qu9] is more effective based on mass of black hole. Exotic Supernova starts later based on Quantizes.`,
@@ -798,18 +798,18 @@ const BEYOND_RANKS = {
         3: {
             1: `Mass & Stronger Overflow is weaker based on archverse tier of normal mass.`,
             2: `Super FSS starts +1 later.`,
-            4: `Beyond Rank boosts Kaon & Pion gain.`,
+            4: `Beyond Grind boosts Kaon & Pion gain.`,
             12: `Remove the softcap of dark ray's fourth reward.`,
-            18: `Super FSS scales +2.5% weaker per beyond-ranks' maximum tier (capped at 50%).`,
+            18: `Super FSS scales +2.5% weaker per beyond-grinds' maximum tier (capped at 50%).`,
             32: `Argon-18 affects tickspeed's power.`,
         },
         4: {
             1: `Beta Particles affect supercritical supernova starting at a reduced rate.`,
-            2: `Prestige base's exponent is increased by beyond-ranks' maximum tier, starting at Dec.`,
+            2: `Prestige base's exponent is increased by beyond-grinds' maximum tier, starting at Decind.`,
             40: `[Tau]'s reward is cubed.`,
         },
         5: {
-            2: `Super FSS starts +1 later per beyond-ranks' maximum tier, starting at Dec.`,
+            2: `Super FSS starts +1 later per beyond-grinds' maximum tier, starting at Decind.`,
             7: `Remove pre-meta scalings from Prestige Level.`,
         },
         6: {
@@ -817,7 +817,7 @@ const BEYOND_RANKS = {
             12: `Bitriunium-231 is cubed.`,
         },
         8: {
-            1: `Infinity Points gain is doubled every highest beyond-rank tier you reached.`,
+            1: `Infinity Points gain is doubled every highest beyond-grind tier you reached.`,
         },
         11: {
             1: `Remove all scalings from Honor & Glory.`,
@@ -826,10 +826,10 @@ const BEYOND_RANKS = {
             1: `Neutronium-0 now affects C16's reward at an extremely reduced rate.`,
         },
         14: {
-            1: `The formula of Dec 2's effect is better. Meta-Prestige Level starts later based on beyond-ranks' maximum tier, starting at Icos.`,
+            1: `The formula of Decind 2's effect is better. Meta-Prestige Level starts later based on beyond-grinds' maximum tier, starting at Icosind.`,
         },
         16: {
-            1: `Ascension Base's exponent is increased by beyond-ranks' maximum tier, starting at Icos.`,
+            1: `Ascension Base's exponent is increased by beyond-grinds' maximum tier, starting at Icosind.`,
         },
         20: {
             1: `The second softcap of Accelerator's Effect is slightly weaker.`,
@@ -994,7 +994,7 @@ const BEYOND_RANKS = {
 }
 
 const RTNS = [
-    ['','Rank','Tier','Tetr','Pent','Hex','Hept','Oct','Enne'],
+    ['','Grind','Trind','Tetrind','Pentind','Hexind','Heptind','Octind','Ennind'],
     ['','dec','icos'], // d>2 -> cont
     ['','hect'], // h>1 -> ct
 ]
@@ -1023,7 +1023,7 @@ function getRankTierName(i) {
         if (h > 0 && d > 0) m += 'a'
         if (h > 0) m += (h > 1 ? RTNS2[2][h] + 'ct' : 'hect')
 
-        return capitalFirst(m)
+        return capitalFirst(m) + 'ind'
     }
 }
 
@@ -1111,13 +1111,13 @@ function updateRanksHTML() {
             }
 
             h = `
-                Reset your Hexes (and force a darkness reset) but hept/oct/enne etc. up. ${r}<br>
-                To ${getRankTierName(t.add(5))} up, require ${getRankTierName(t.add(4))} ${
+                Reset your Hexinds (and force a darkness reset) but get heptinded/octinded/enninded etc. ${r}<br>
+                To get ${getRankTierName(t.add(5))}ed, require ${getRankTierName(t.add(4))} ${
                     t == 1
                     ? tmp.beyond_ranks.req.format(0)
                     : BEYOND_RANKS.getRequirementFromTier(1,tmp.beyond_ranks.latestRank,t.sub(1)).format(0)
                 }.<br>
-                To ${getRankTierName(t.add(6))} up, require ${getRankTierName(t.add(5))} ${BEYOND_RANKS.getRequirementFromTier(1,0).format(0)}.
+                To get ${getRankTierName(t.add(6))}ed, require ${getRankTierName(t.add(5))} ${BEYOND_RANKS.getRequirementFromTier(1,0).format(0)}.
             `
 
             tmp.el.br_desc.setHTML(h)
@@ -1127,7 +1127,7 @@ function updateRanksHTML() {
         let rc = tmp.rank_collapse
 
         tmp.el.rankCollapse.setDisplay(player.ranks.beyond.gte(rc.start))
-        tmp.el.rankCollapse.setHTML(`Because of Rank Collapse at <b>${BEYOND_RANKS.getRankDisplayFromValue(rc.start)}</b>, Hept's requirement is raised by <b>${rc.reduction.format()}</b>!`)
+        tmp.el.rankCollapse.setHTML(`Because of Grind Collapse at <b>${BEYOND_RANKS.getRankDisplayFromValue(rc.start)}</b>, Heptind's requirement is raised by <b>${rc.reduction.format()}</b>!`)
     }
     else if (tmp.rank_tab == 1) {
         tmp.el.pres_base.setHTML(`${tmp.prestiges.baseMul.format(0)}<sup>${format(tmp.prestiges.baseExp)}</sup> = ${tmp.prestiges.base.format(0)}`)
@@ -1289,7 +1289,7 @@ function updateGPHTML() {
         which increases to the base of all Matter upgrades by <h4>+${format(res_effect[2])}</h4>.<br>`
 
         if (gp.gte(6)) h += `You have <h4>${res[3].format(0)}</h4> ${res[3].formatGain(res_gain[3])} Redshift (based on frequency and galactic prestige), 
-        which reduces Rank requirement by <h4>^${format(res_effect[3],5)}</h4>.<br>`
+        which reduces Grind requirement by <h4>^${format(res_effect[3],5)}</h4>.<br>`
 
         if (gp.gte(9)) h += `You have <h4>${res[4].format(0)}</h4> ${res[4].formatGain(res_gain[4])} Normal Energy (based on corrupted star and galactic prestige), 
         which weaken corrupted star reduction by <h4>${formatReduction(res_effect[4])}</h4>.<br>`

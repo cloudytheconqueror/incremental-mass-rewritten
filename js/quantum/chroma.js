@@ -71,8 +71,8 @@ const CHROMA = {
             return `Makes tickspeed power raised to the ${format(x)}th power.`//.corrupt(tmp.c16active)
         },
         x => {
-            return `Makes all ${player.dark.unl ? "Pre-Exotic p" : "P"}re-Pent requirements reduced by ${format(x[0])}x`+x[0].softcapHTML(1e10)+"."
-            +(hasPrestige(2,4)?`<br>Also, all pre-Exotic ${hasElement(207) ? "Rank-Hex" : "pre-Hex"} scalings are ${formatReduction(x[1])} weaker.`:"")
+            return `Makes all ${player.dark.unl ? "Pre-Exotic p" : "P"}re-Pentind requirements reduced by ${format(x[0])}x`+x[0].softcapHTML(1e10)+"."
+            +(hasPrestige(2,4)?`<br>Also, all pre-Exotic ${hasElement(207) ? "Grind-Hexind" : "pre-Hexind"} scalings are ${formatReduction(x[1])} weaker.`:"")
         },
         x => {
             return `Makes rewards from Challenges 1-8 ${format(x)}x stronger.`

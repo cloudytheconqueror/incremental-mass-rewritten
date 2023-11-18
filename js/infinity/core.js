@@ -5,7 +5,7 @@ const CORE = {
         preEff: [
             `Boost normal mass gain.`,
             `Boost normal mass overflow starting.`,
-            `Make pre-beyond ranks cheaper.`,
+            `Make pre-beyond grinds cheaper.`,
             `Increase the exponent of prestige base.`,
             `Boost normal mass overflow^2 starting.`,
             `Increase the exponent of ascension base.`,
@@ -411,7 +411,7 @@ const CORE = {
 
                 return x.toNumber()
             },
-            x => `Weaken beyond rank’s next tier requirement by <b>${formatReduction(x)}</b>.`,
+            x => `Weaken beyond grind’s next tier requirement by <b>${formatReduction(x)}</b>.`,
         ],
     },
 }

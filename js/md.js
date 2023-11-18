@@ -285,7 +285,7 @@ const MASS_DILATION = {
                     cost(x) { return E(1.989e33) },
                     bulk() { return player.md.break.mass.gte(1.989e33)?E(1):E(0) },
                 },{
-                    get desc() { return hasUpgrade('br',24) ? `Instant-Rank scales later` : `Meta-Rank scales later.` },
+                    get desc() { return hasUpgrade('br',24) ? `Instant-Grind scales later` : `Meta-Grind scales later.` },
                     cost(x) { return E(10).pow(x.pow(2)).mul(1.989e36) },
                     bulk() { return player.md.break.mass.gte(1.989e36)?player.md.break.mass.div(1.989e36).max(1).log10().root(2).add(1).floor():E(0) },
                     effect(y) {

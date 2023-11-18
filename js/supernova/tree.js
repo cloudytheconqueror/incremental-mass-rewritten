@@ -233,7 +233,7 @@ const TREE_UPGS = {
             branch: ["s1"],
             req() { return player.supernova.times.gte(3) },
             reqDesc: `3 Supernovas.`,
-            desc: `Tetr amount to Star boost’s softcap is 50% weaker.`,
+            desc: `Tetrind amount to Star boost’s softcap is 50% weaker.`,
             cost: E(2500),
         },
         s3: {
@@ -287,7 +287,7 @@ const TREE_UPGS = {
             branch: ["qol4"],
             req() { return player.supernova.times.gte(16) },
             reqDesc: `16 Supernovas.`,
-            desc: `Tetr no longer resets anything.`,
+            desc: `Tetrind no longer resets anything.`,
             cost: E(1e13),
         },
         qol6: {
@@ -309,7 +309,7 @@ const TREE_UPGS = {
             branch: ["unl1"],
             req() { return player.supernova.times.gte(60) },
             reqDesc: `60 Supernovas.`,
-            desc: `You can now automatically Pent up, Pent no longer resets anything.`,
+            desc: `You can now automatically get Pentind, Pentind no longer resets anything.`,
             cost: E(1e78),
         },
         qol9: {

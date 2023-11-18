@@ -273,7 +273,7 @@ const MUONIC_ELEM = {
             desc: `Quark overflow is 25% weaker.`,
             cost: E('e9200'),
         },{
-            desc: `Boost Supernova Generation based on beyond-ranks' maximum tier.`,
+            desc: `Boost Supernova Generation based on beyond-grinds' maximum tier.`,
             cost: E('e12100'),
             eff() {
                 let x = Decimal.pow(2.5,tmp.beyond_ranks.max_tier)
@@ -336,7 +336,7 @@ const MUONIC_ELEM = {
             desc: `Unlock the sixth star generator.`,
             cost: E('e625'),
         },{
-            desc: `Undec 2’s reward now affects Hyper FSS.`,
+            desc: `Undecind 2’s reward now affects Hyper FSS.`,
             cost: E('e26900'),
         },{
             desc: `Muonic Zirconium-40 is twice as stronger.`,

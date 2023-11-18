@@ -288,15 +288,15 @@ const UPGS = {
                 cost: E(25),
             },
             4: {
-                desc: "Ranks no longer reset anything.",
+                desc: "Grinds no longer reset anything.",
                 cost: E(50),
             },
             5: {
-                desc: "You can automatically rank up.",
+                desc: "You can automatically get grinded.",
                 cost: E(1e4),
             },
             6: {
-                desc: "You can automatically tier up.",
+                desc: "You can automatically get trinded.",
                 cost: E(1e5),
             },
             7: {
@@ -328,7 +328,7 @@ const UPGS = {
             },
             10: {
                 unl() { return player.bh.unl },
-                desc: "Super Rank scaling is 20% weaker.",
+                desc: "Super Grind scaling is 20% weaker.",
                 cost: E(1e43),
             },
             11: {
@@ -357,7 +357,7 @@ const UPGS = {
             },
             13: {
                 unl() { return player.chal.unl },
-                desc: "Mass gain softcap starts 3x later for every Rank you have.",
+                desc: "Mass gain softcap starts 3x later for every Grind you have.",
                 cost: E(1e180),
                 effect() {
                     let ret = E(3).pow(player.ranks.rank)
@@ -445,7 +445,7 @@ const UPGS = {
             },
             22: {
                 unl() { return tmp.fifthRowUnl },
-                desc: `Rank Collapse starts later based on rage powers at an extremely reduced rate.`,
+                desc: `Grind Collapse starts later based on rage powers at an extremely reduced rate.`,
                 cost: E('ee36000'),
                 effect() {
                     let x = player.rp.points.add(1).log10().add(1).log10().add(1)
@@ -519,7 +519,7 @@ const UPGS = {
                 },
             },
             4: {
-                desc: "Tiers no longer reset anything.",
+                desc: "Trinds no longer reset anything.",
                 cost: E(1e4),
             },
             5: {
@@ -735,7 +735,7 @@ const UPGS = {
                 cost: E(100),
             },
             3: {
-                desc: "[Tetr Era] Unlock Tetr.",
+                desc: "[Tetrind Era] Unlock Tetrind.",
                 cost: E(25000),
             },
             4: {
@@ -750,7 +750,7 @@ const UPGS = {
                 },
             },
             5: {
-                desc: "You can automatically Tetr up. Super Tier starts 10 later.",
+                desc: "You can automatically get Tetrind. Super Trind starts 10 later.",
                 cost: E(1e16),
             },
             6: {
@@ -791,7 +791,7 @@ const UPGS = {
                 cost: E(2e44),
             },
             10: {
-                desc: "Tier requirement is halved. Hyper Rank starts later based on Tiers you have.",
+                desc: "Trind requirement is halved. Hyper Grind starts later based on Trinds you have.",
                 cost: E(5e47),
                 effect() {
                     let ret = player.ranks.tier.mul(2).floor()
@@ -932,7 +932,7 @@ const UPGS = {
                 cost: E(5),
             },
             2: {
-                desc: `Mass Upgrades & Ranks are no longer nerfed by 8th QC modifier.`,
+                desc: `Mass Upgrades & Grinds are no longer nerfed by 8th QC modifier.`,
                 cost: E(10),
             },
             3: {

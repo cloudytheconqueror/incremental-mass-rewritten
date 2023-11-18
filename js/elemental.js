@@ -145,7 +145,7 @@ const ELEMENTS = {
             cost: E(1e21),
         },
         {
-            desc: `Tetr's requirement is 15% weaker.`,
+            desc: `Tetrind's requirement is 15% weaker.`,
             cost: E(6.5e21),
         },
         {
@@ -249,7 +249,7 @@ const ELEMENTS = {
             effDesc(x) { return format(E(1).sub(x).mul(100))+"% weaker" },
         },
         {
-            desc: `Hyper/Ultra Rank & Tickspeed scales 25% weaker.`,
+            desc: `Hyper/Ultra Grind & Tickspeed scales 25% weaker.`,
             cost: E(1e90),
         },
         {
@@ -304,7 +304,7 @@ const ELEMENTS = {
             cost: E(1e225),
         },
         {
-            desc: `Super Tier scales weaker based on Tetr.`,
+            desc: `Super Trind scales weaker based on Tetrind.`,
             cost: E(1e245),
             effect() {
                 let x = E(0.9).pow(player.ranks.tetr.softcap(6,0.5,0))
@@ -357,7 +357,7 @@ const ELEMENTS = {
             cost: E('e360'),
         },
         {
-            desc: `The Tetr requirement is broken.`,
+            desc: `The Tetrind requirement is broken.`,
             cost: E('e380'),
         },
         {
@@ -444,7 +444,7 @@ const ELEMENTS = {
             effDesc(x) { return format(x)+"x" },
         },
         {
-            desc: `Ultra Rank & Tickspeed scale weaker based on Tier.`,
+            desc: `Ultra Grind & Tickspeed scale weaker based on Trind.`,
             cost: E('e5.7e4'),
             effect() {
                 let x = E(0.975).pow(player.ranks.tier.pow(0.5))
@@ -465,7 +465,7 @@ const ELEMENTS = {
             cost: E('e1.5e5'),
         },
         {
-            desc: `Ultra rank scaling starts 3 later for every supernova.`,
+            desc: `Ultra grind scaling starts 3 later for every supernova.`,
             cost: E('e2.5e5'),
             effect() {
                 let x = player.supernova.times.mul(3)
@@ -504,7 +504,7 @@ const ELEMENTS = {
             cost: E('e4.8e6'),
         },
         {
-            desc: `Pent is now added in mass gain formula from collapsed stars.`,
+            desc: `Pentind is now added in mass gain formula from collapsed stars.`,
             cost: E('e3.6e7'),
         },
         {
@@ -521,7 +521,7 @@ const ELEMENTS = {
             effDesc(x) { return "^"+format(x)+" later" },
         },
         {
-            desc: `Tetrs are 15% cheaper.`,
+            desc: `Tetrinds are 15% cheaper.`,
             cost: E('e5.75e8'),
         },
         {
@@ -535,7 +535,7 @@ const ELEMENTS = {
             effDesc(x) { return "+"+format(x,0) },
         },
         {
-            desc: `Super Tetr scales 25% weaker.`,
+            desc: `Super Tetrind scales 25% weaker.`,
             cost: E('e2.6e9'),
         },
         {
@@ -667,7 +667,7 @@ const ELEMENTS = {
             cost: E('e2.15e7'),
         },
         {
-            desc: `Prestige Base’s exponent is increased based on Pent.`,
+            desc: `Prestige Base’s exponent is increased based on Pentind.`,
             cost: E('e2.5e7'),
             effect() {
                 let pent = player.ranks.pent
@@ -712,7 +712,7 @@ const ELEMENTS = {
             cost: E('e1.45e10'),
         },
         {
-            desc: `All scalings from Ranks to Pent scale 10% weaker (only 2% during Big Rip).`,
+            desc: `All scalings from Grinds to Pentind scale 10% weaker (only 2% during Big Rip).`,
             cost: E('e1.6e10'),
         },
         {
@@ -946,11 +946,11 @@ const ELEMENTS = {
             },
             effDesc(x) { return "^"+format(x)+x.softcapHTML(400) },
         },{
-            desc: `Hyper Prestige Level, Tetr & Pent scalings are 10% weaker.`,
+            desc: `Hyper Prestige Level, Tetrind & Pentind scalings are 10% weaker.`,
             cost: E("e5e64"),
         },{
             br: true,
-            desc: `Meta-Rank Boost affects Meta-Tier starting at a reduced rate.`,
+            desc: `Meta-Grind Boost affects Meta-Trind starting at a reduced rate.`,
             cost: E("e1.3e49"),
             effect() {
                 let x = tmp.radiation.bs.eff[14].max(1).log10().add(1)
@@ -1000,7 +1000,7 @@ const ELEMENTS = {
             desc: `[bh1]’s effect is overpowered for the third time.`,
             cost: E("e2.27e70"),
         },{
-            desc: `Hex’s requirement and Glory’s requirement are slightly weaker.`,
+            desc: `Hexind’s requirement and Glory’s requirement are slightly weaker.`,
             cost: E("e1.08e72"),
         },{
             dark: true,
@@ -1050,7 +1050,7 @@ const ELEMENTS = {
             },
             effDesc(x) { return "x"+format(x) },
         },{
-            desc: `Exotic rank starts later based on meta-rank starting.`,
+            desc: `Exotic grind starts later based on meta-grind starting.`,
             cost: E("e4.8e79"),
             effect() {
                 if (!tmp.scaling_start.meta || !tmp.scaling_start.meta.rank) return E(1)
@@ -1073,7 +1073,7 @@ const ELEMENTS = {
             desc: `Reduce first 12 challenges’ scaling’s strength by 30%.`,
             cost: E("e2e77"),
         },{
-            desc: `Meta-Tier starts x10 later.`,
+            desc: `Meta-Trind starts x10 later.`,
             cost: E("e1.2e84"),
         },{
             desc: `Raise collapsed stars gain after softcap by 10.`,
@@ -1088,7 +1088,7 @@ const ELEMENTS = {
             },
             effDesc(x) { return "x"+format(x) },
         },{
-            desc: `Super Pent & Hex start later based on Hybridized Uran-Astatine's first effect.`,
+            desc: `Super Pentind & Hexind start later based on Hybridized Uran-Astatine's first effect.`,
             cost: E("e3e85"),
             effect() {
                 let x = tmp.qu.chroma_eff[1][0].max(1).log10().div(2).add(1)
@@ -1146,7 +1146,7 @@ const ELEMENTS = {
             },
             effDesc(x) { return "x"+format(x) },
         },{
-            desc: `Hybridized Uran-Astatine’s first effect makes Exotic Rank and Meta-Tier start later at ^0.5 rate.`,
+            desc: `Hybridized Uran-Astatine’s first effect makes Exotic Grind and Meta-Trind start later at ^0.5 rate.`,
             cost: E("e3.3e93"),
             effect() {
                 let x = tmp.qu.chroma_eff[1][0].max(1).root(2)
@@ -1166,7 +1166,7 @@ const ELEMENTS = {
             cost: E("e7.7e92"),
         },{
             dark: true,
-            desc: `Exotic Rank and Ultra Prestige Level scaling are 10% weaker.`,
+            desc: `Exotic Grind and Ultra Prestige Level scaling are 10% weaker.`,
             cost: E('e435'),
         },{
             desc: `Particle powers’ first effect is better.`,
@@ -1222,10 +1222,10 @@ const ELEMENTS = {
             effDesc(x) { return "+^"+format(x) },
         },{
             br: true,
-            desc: `Hybridized Uran-Astatine’s second effect applies to hex scalings. It is stronger.`,
+            desc: `Hybridized Uran-Astatine’s second effect applies to hexind scalings. It is stronger.`,
             cost: E("1e1.67e103"),
         },{
-            desc: `Unlock Beyond-Ranks.`,
+            desc: `Unlock Beyond-Grinds.`,
             cost: E('e2e111'),
         },{
             desc: `Muscler boosts its effect.`,
@@ -1251,7 +1251,7 @@ const ELEMENTS = {
             effDesc(x) { return "x"+format(x)+" later" },
         },{
             br: true,
-            desc: `Meta-Rank Boost also affects Meta-Tetr starting at a reduced rate, strengthen Unpentpentium-155.`,
+            desc: `Meta-Grind Boost also affects Meta-Tetrind starting at a reduced rate, strengthen Unpentpentium-155.`,
             cost: E("1e5e110"),
             effect() {
                 let x = tmp.radiation.bs.eff[14].max(1).log10().add(1)
@@ -1292,7 +1292,7 @@ const ELEMENTS = {
             cost: E('e400000'),
         },{
             c16: true,
-            desc: `Beyond Rank’s next tier requirement is 5% weaker.`,
+            desc: `Beyond Grind’s next tier requirement is 5% weaker.`,
             cost: E('e1e20'),
         },{
             inf: true,
@@ -1398,7 +1398,7 @@ const ELEMENTS = {
             cost: E('ee888'),
         },{
             dark: true,
-            desc: `Remove all scalings from Pent. Hybridized Uran-Astatine’s first effect now works with Ranks, but it is now changed.`,
+            desc: `Remove all scalings from Pentind. Hybridized Uran-Astatine’s first effect now works with Grinds, but it is now changed.`,
             cost: E('e9.2e6'),
         },{
             desc: `Dimensional mass gain is boosted by infinity theorems. Its formula is slightly better.`,
@@ -1626,7 +1626,7 @@ const ELEMENTS = {
             cost: E('ee64600'),
         },{
             dark: true,
-            desc: `Rank Collapse starts later based on fading matter.`,
+            desc: `Grind Collapse starts later based on fading matter.`,
             cost: E('e6.5e12'),
             effect() {
                 let x = player.dark.matters.amt[12].add(1e10).log10().log10().pow(4/3)

@@ -319,8 +319,8 @@ const CHALS = {
     },
     1: {
         title: "Instant Scale",
-        desc: "Super rank and mass upgrade scaling starts at 25. Also, Super tickspeed starts at 50.",
-        reward: ()=>hasBeyondRank(2,20)?`Supercritical Rank & All Fermions Tier scaling starts later, Super Overpower scales weaker based on completions.`:`Super Rank starts later, Super Tickspeed scales weaker based on completions.`,
+        desc: "Super grind and mass upgrade scaling starts at 25. Also, Super tickspeed starts at 50.",
+        reward: ()=>hasBeyondRank(2,20)?`Supercritical Grind & All Fermions Tier scaling starts later, Super Overpower scales weaker based on completions.`:`Super Grind starts later, Super Tickspeed scales weaker based on completions.`,
         max: E(100),
         inc: E(5),
         pow: E(1.3),
@@ -333,7 +333,7 @@ const CHALS = {
             let over = Decimal.pow(0.99,x.add(1).log10().root(2)).max(.5)
             return {rank: rank, tick: tick, scrank, over}
         },
-        effDesc(x) { return hasBeyondRank(2,20)?formatMult(x.scrank)+" later to Supercritical Rank & All Fermions starting, "+formatReduction(x.over)+" weaker to Super Overpower scaling":"+"+format(x.rank,0)+" later to Super Rank starting, "+format(E(1).sub(x.tick).mul(100))+"% weaker to Super Tickspeed scaling" },
+        effDesc(x) { return hasBeyondRank(2,20)?formatMult(x.scrank)+" later to Supercritical Grind & All Fermions starting, "+formatReduction(x.over)+" weaker to Super Overpower scaling":"+"+format(x.rank,0)+" later to Super Grind starting, "+format(E(1).sub(x.tick).mul(100))+"% weaker to Super Tickspeed scaling" },
     },
     2: {
         unl() { return player.chal.comps[1].gte(1) || player.atom.unl },
@@ -387,9 +387,9 @@ const CHALS = {
     },
     5: {
         unl() { return player.atom.unl },
-        title: "No Rank",
-        desc: "You cannot rank up.",
-        reward: ()=>hasAscension(0,22)?`Supercritical Rank, Ultra Hex scale weaker based on completions.`:hasCharger(3)?`Exotic Rank & Tier, Ultra Prestige Level scale weaker based on completions.`:`Rank requirement is weaker based on completions.`,
+        title: "No Grind",
+        desc: "You cannot get grinded.",
+        reward: ()=>hasAscension(0,22)?`Supercritical Grind, Ultra Hexind scale weaker based on completions.`:hasCharger(3)?`Exotic Grind & Trind, Ultra Prestige Level scale weaker based on completions.`:`Grind requirement is weaker based on completions.`,
         max: E(50),
         inc: E(50),
         pow: E(1.25),
@@ -569,7 +569,7 @@ const CHALS = {
         title: "Chaotic Matter Annihilation",
         desc: `
         • You cannot gain rage powers, and all matters' formulas are disabled, and they generate each other. Red matter generates dark matter.<br>
-        • Pre-C16 features, such as rank, prestige tiers, main upgrades, elements, tree upgrades, etc. may be corrupted (disabled).<br>
+        • Pre-C16 features, such as grind, prestige tiers, main upgrades, elements, tree upgrades, etc. may be corrupted (disabled).<br>
         • You are trapped in Mass Dilation & Dark Run with 100 all glyphs (10 slovak glyphs).<br>
         • Primordium particles are disabled.<br>
         • Pre-Quantum global speed is always set to /100.<br>

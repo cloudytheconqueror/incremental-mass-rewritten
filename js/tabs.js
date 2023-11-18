@@ -34,10 +34,10 @@ const TABS = {
             { id: "The Parallel", unl() { return hasInfUpgrade(9) }, style: "inf" },
         ],
         1: [
-            { id: "Ranks Rewards" },
+            { id: "Grinds Rewards" },
             { id: "Scaling", unl() { return tmp.scaling ? tmp.scaling.super.length>0 : false } },
             { id: "Prestige Rewards", unl() { return hasUpgrade("br",9) } },
-            { id: "Beyond-Ranks Rewards", unl() { return tmp.brUnl } },
+            { id: "Beyond-Grinds Rewards", unl() { return tmp.brUnl } },
             { id: "Ascension Rewards", unl() { return tmp.ascensions_unl } },
         ],
         2: [
