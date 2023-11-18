@@ -309,7 +309,7 @@ const TREE_UPGS = {
             branch: ["unl1"],
             req() { return player.supernova.times.gte(60) },
             reqDesc: `60 Supernovas.`,
-            desc: `You can now automatically get Pentind, Pentind no longer resets anything.`,
+            desc: `You can now automatically get Pentinded, Pentind no longer resets anything.`,
             cost: E(1e78),
         },
         qol9: {

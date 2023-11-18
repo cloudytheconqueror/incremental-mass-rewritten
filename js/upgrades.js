@@ -750,7 +750,7 @@ const UPGS = {
                 },
             },
             5: {
-                desc: "You can automatically get Tetrind. Super Trind starts 10 later.",
+                desc: "You can automatically get Tetrinded. Super Trind starts 10 later.",
                 cost: E(1e16),
             },
             6: {
